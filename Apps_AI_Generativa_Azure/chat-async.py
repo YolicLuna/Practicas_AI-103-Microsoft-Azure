@@ -15,7 +15,7 @@ y de implementar el modelo de AI.
 Se recomienda crear un entorno de desarrollo .env e instalar las dependencias indicadas
 en el archivo requirements.txt usando 'pip install -r requirements.txt'.
 
-"""
+""" 
 
 
 # Primero se importan las librerias necesarias para el funcionamiento del script.
