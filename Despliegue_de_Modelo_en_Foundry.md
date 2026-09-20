@@ -21,6 +21,9 @@ Antes de comenzar este proceso, debes tener lo siguiente:
 
 1. En tu navegador web, abre el [portal de Microsoft Foundry](https://ai.azure.com) e inicia sesión con tus credenciales de Azure.
 
+![1](Imagenes/1.png)
+
+
 2. Si aún no está habilitada, activa la opción **New Foundry** en la barra de herramientas situada en la parte superior de la página. A continuación, crea un proyecto con un nombre único y expande el área de **Opciones avanzadas** para especificar la siguiente información:
     - **Recurso de Foundry:** utiliza el nombre predeterminado para el recurso.
     - **Suscripción:** selecciona tu suscripción de Azure.
@@ -29,23 +32,37 @@ Antes de comenzar este proceso, debes tener lo siguiente:
 
 3. Selecciona **Crear** y espera a que se cree el proyecto. Cuando esté listo, se abrirá la página principal del proyecto.
 
+![2](Imagenes/2.png)
+
 ---
 
 ## Implementar y probar un modelo
 
 1. Ahora podrás explorar los modelos. En la página **Descubrir**, selecciona la pestaña **Modelos** para ver el catálogo de modelos de Microsoft Foundry.
 
+![3](Imagenes/3.png)
+
+
 2. Busca el modelo **gpt-5.2** y selecciónalo en los resultados de la búsqueda para consultar su ficha técnica.
 Cada modelo contiene su propia ficha técnica, que proporciona información para ayudarte a comprender sus capacidades y limitaciones, y a determinar si se ajusta a tus necesidades.
 
+![4](Imagenes/4.png)
+
+
 3. Selecciona **Implementar** con la configuración predeterminada para crear una implementación del modelo.
 Las implementaciones de modelos te permiten trabajar con un modelo en tu proyecto. Una vez implementado el modelo, el entorno de pruebas se abrirá automáticamente para que puedas probarlo.
+
+![5](Imagenes/5.png)
+![6](Imagenes/6.png)
+
 
 4. En el cuadro de **Instrucciones**, introduce una o varias instrucciones. Por ejemplo:
     *Eres un asistente de IA que puede dar recomendaciones sobre desarrollo de software.*
 
 5. En la ventana de chat, introduce una consulta (*prompt*). Por ejemplo:
     *Describe los tres patrones de diseño más utilizados.*
+
+![7](Imagenes/7.png)
 
 ---
 
@@ -55,6 +72,9 @@ Las implementaciones de modelos te permiten trabajar con un modelo en tu proyect
 El centro de administración es donde puedes ver y gestionar tus proyectos y sus recursos principales:
     - El **nivel de recursos** se refiere al recurso de Foundry creado en Azure para dar soporte a tu proyecto. Este recurso incluye conexiones a los servicios y modelos de Foundry, y proporciona un lugar centralizado para gestionar el acceso de los usuarios a los proyectos de desarrollo de IA.
     - El **nivel de proyecto** se refiere a tu proyecto individual, donde puedes agregar y administrar recursos específicos. Un recurso puede dar soporte a varios proyectos. El primero que se crea es el **proyecto predeterminado** del recurso.
+
+![8](Imagenes/8.png)
+![9](Imagenes/9.png)
 
 2. Selecciona el enlace al **recurso principal** asociado con el proyecto.
 Se deben mostrar los detalles de configuración del recurso.
@@ -68,6 +88,8 @@ Esta información se utiliza para conectarte con los recursos de tu proyecto des
     - El **punto de conexión del proyecto** se utiliza para acceder a los modelos proporcionados directamente en Foundry, incluidos los modelos de OpenAI, mediante la **API de OpenAI Responses**, y para acceder a las API específicas de Foundry, como el servicio **Foundry Agent**.
     - El **punto de conexión de OpenAI** se utiliza para acceder a los modelos mediante las **API de OpenAI**, incluidas la **API de finalización de chat** y la **API de respuestas**.
 
+![11](Imagenes/11.png)
+
 ---
 
 ## Instalar la extensión Foundry Toolkit para Visual Studio Code
@@ -78,16 +100,22 @@ Como desarrollador, es posible que dediques tiempo a trabajar en el portal de Fo
 
 2. En la barra de navegación, normalmente situada en el lado izquierdo, selecciona **Extensiones**.
 
+![12](Imagenes/12.png)
+
 3. Busca **Foundry Toolkit** en el mercado de extensiones e instala la extensión **Foundry Toolkit para VS Code**.
 
 4. Tras instalar la extensión, selecciona la página **Foundry Toolkit** en la barra de navegación y espera a que se cargue.
+
+![13](Imagenes/13.png)
 
 5. En el panel Foundry Toolkit, expande **Recursos de Microsoft Foundry** y configura el proyecto predeterminado conectándote a Azure. Inicia sesión con tus credenciales y selecciona el proyecto de Foundry que creaste anteriormente.
 
 6. Tras configurar el proyecto predeterminado, expande el proyecto, expande **Modelos** y selecciona el modelo **gpt-5.2** que implementaste previamente.
 Aquí puedes consultar los detalles de la implementación del modelo.
 
+![14](Imagenes/14.png)
+
 7. En el panel de Foundry Toolkit, en la sección **Herramientas para desarrolladores**, expande **Compilación** y selecciona el modelo **gpt-5.2**, en caso de que aún no esté seleccionado.
 En VS Code se abrirá un entorno interactivo donde podrás probar el modelo.
 
-
+![15](Imagenes/15.png)
